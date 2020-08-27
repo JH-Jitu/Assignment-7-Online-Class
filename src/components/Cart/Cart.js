@@ -12,7 +12,7 @@ const Cart = (props) => {
                     <h5 className="card-title">Current Courses</h5>
                     <p className="card-text">Courses purchased: {cart.length}</p>
                     <p className="card-text">Total Amount: {total.toFixed(2)}</p>
-                    
+                  
                 </div>
             </div> 
         </div>

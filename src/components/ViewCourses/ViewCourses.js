@@ -5,8 +5,8 @@ import Course from '../Course/Course';
 import Cart from '../Cart/Cart'
 
 const ViewCourses = () => {
-    const first13 = fakeData.slice(0, 13);
-    const [courses, setCourses] = useState(first13);
+    const first12 = fakeData.slice(0, 12);
+    const [courses, setCourses] = useState(first12);
     const [cart, setCart] = useState([]);
 
     const handleAddCourse = (course) => {
@@ -20,7 +20,7 @@ const ViewCourses = () => {
                     {
                         courses.map(courseValue => <Course 
                             handleAddCourse = {handleAddCourse}
-                            course = {courseValue}></Course>)
+                            course = {courseValue}  key={courseValue.key}></Course>)
                     }
                 </ul>
            </div>
