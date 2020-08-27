@@ -14,8 +14,8 @@ const ViewCourses = () => {
         setCart(newCart);
     }
     return (
-        <div className="d-flex bd-highlight">
-           <div className="p-2 w-100 bd-highlight flex-sm-{grow|shrink}-0">
+        <div className="d-flex bd-highlight justify-content-between justify-content-sm-center row-sm-12">
+           <div className="p-2 w-100 bd-highlight flex-sm-{grow|shrink}-1 flex-{grow|shrink}-0 courses-container col-sm-8">
                 <ul>
                     {
                         courses.map(courseValue => <Course 
@@ -24,7 +24,7 @@ const ViewCourses = () => {
                     }
                 </ul>
            </div>
-           <div className="p-2 flex-shrink-1 bd-highlight flex-sm-{grow|shrink}-1">
+           <div className="p-2 flex-shrink-1 bd-highlight flex-sm-{grow|shrink}-1 flex-{grow|shrink}-1 cart-container col-sm-4">
                         <Cart cart = {cart}></Cart>
             </div> 
         </div>

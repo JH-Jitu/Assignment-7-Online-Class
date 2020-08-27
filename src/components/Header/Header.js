@@ -4,7 +4,7 @@ import './Header.css'
 const header = () => {
     return (   
       <nav className="navbar navbar-expand-lg navbar-dark">
-      <a className="navbar-brand" href="https://www.facebook.com/groups/989326168171713">INVENTIONOLOGIES.com</a>
+      <a className="navbar-brand" href="https://www.facebook.com/groups/989326168171713">INVENTIONOLOGIES</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
