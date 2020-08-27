@@ -5,9 +5,9 @@ import ViewCourses from './components/ViewCourses/ViewCourses';
 
 function App() {
   return (
-    <div className="container">
+    <div className="">
       <Header></Header> <br/><br/>
-      <div className="courses">
+      <div className="container">
       <ViewCourses></ViewCourses>
       </div>
     </div>

@@ -1,25 +1,15 @@
-.header img{
-   height: 60px;
+nav img{
+    width: 200px;
+    background-color: lightgray;
+    padding: 5px;
+    box-shadow: 5px 4px 6px white;
+    border: 1px solid rgb(0, 0, 0);
 }
-.header{
-    text-align: right;
 
-}
-.navBar{
-    background-color: rgb(54, 33, 33);
-    line-height: 45px;
-
-}
-.navBar a{
-    text-decoration: none;
-    color: white;
-    margin: 20px;
-    padding: 10px;
-}
-.navBar a:hover{
-    background-color:rgb(85, 11, 75);
-    color: rgb(228, 205, 205);
-}
 .navbar{
     background-color:rgb(11, 6, 46);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10px 60px;
 }

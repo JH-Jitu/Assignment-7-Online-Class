@@ -3,25 +3,28 @@ import logo from "../../images/logo.png"
 import './Header.css'
 const header = () => {
     return (   
-        <div className="navbar navbar-expand-lg navbar-dark">            
-        <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarTogglerDemo01">
-          <a className="navbar-brand" href="https://www.facebook.com/groups/989326168171713">INVENTIONOLOGIES.com</a>
-          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li className="nav-item active">
-              <a className="nav-link" href="/home">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/continue">Running Course</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/certificate">Certificate</a>
-            </li>
-          </ul>
-          <div className="logoImg form-inline my-2 my-lg-0">
+      <nav className="navbar navbar-expand-lg navbar-dark">
+      <a className="navbar-brand" href="https://www.facebook.com/groups/989326168171713">INVENTIONOLOGIES.com</a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarText">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="/home">Home <span className="sr-only">(current)</span></a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/continue">Current Courses</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/pricing">Pricing</a>
+          </li>
+        </ul>
+        <span className="navbar-text">
           <img src={logo} alt=""/>
-          </div>
-        </div>
+        </span>
       </div>
+    </nav>
     );
 };
 

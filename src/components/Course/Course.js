@@ -8,11 +8,11 @@ const Course = (props) => {
     // console.log(props)
     const {name, img, seller, price, key} = props.course;
     return (
-        <div className="d-flex justify-content-around course">
-            <div>
+        <div className="d-flex bd-highlight course">
+            <div className="p-2 w-80 bd-highlight flex-sm-{grow|shrink}-0 flex-{grow|shrink}-0">
                 <img src={img} alt=""/>
             </div>
-            <div>
+            <div className="p-2 flex-shrink-1 bd-highlight details">
                 <h5>{name}</h5>
                 <br/>
                 <p><small>Instructor: {seller}</small></p>
